@@ -1,0 +1,36 @@
+.header-Conversaoofx {
+  background-color: rgb(223, 223, 223);
+  grid-area: header;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  box-shadow: 0px 0px 20px black;
+}
+
+.icon-Conversaoofx{
+  font-size: 40px;
+  color: #058d8d;
+
+  
+}
+
+.menu-icon-Conversaoofx {
+  color: rgb(0, 0, 0);
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  .menu-icon-Conversaoofx {
+      display: inline;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .header-left-Conversaoofx {
+      display: none;
+  }
+}
+

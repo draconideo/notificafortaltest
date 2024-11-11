@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$verdeEscuro: #1B4051;
+$vermelho: #BC1918;
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+}
+
+
+
+
+
+@import 'scss/header';
+@import 'scss/card-container';
+@import 'scss/previsaotempo';
+@import 'scss/graficos';
+@import 'scss/modal-information';

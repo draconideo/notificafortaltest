@@ -1,0 +1,206 @@
+
+div.corpototainformation{
+
+    header.headerlogo{
+        
+        div.logoinformation-denuncia-button{
+            display: flex;
+            align-items: center;
+
+            div.divlogo{
+                flex: 50%;
+                margin-left: 5vw;
+                display: flex;
+                align-items: center;
+                
+                img.imagemlogo{
+                    width: 50px;
+                }
+                
+                h1.tituloinformations{
+                    margin-left: 5px;
+                    font-family: Dosis;
+                    font-size: 36px;
+                    font-weight: bold;
+                    
+                    span.tituloinformationsnotifica{
+                        color: #184080;
+                    }
+                    
+                    span.tituloinformationsfortaleza{
+                        color: #0596D6 ;
+                        margin-left: 8px;
+                    }
+                }
+            }
+
+            div.notification{
+                font-size: dosis;
+                font-weight: bold;
+                position: relative;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                background-color: $verdeEscuro;
+                color: white;
+                border-radius: 6px;
+                
+                &::before, &::after{
+                    z-index: -1;
+                    position: absolute;
+                    content: '';
+                    width: calc(100% + 5px);
+                    height: calc(100% + 5px);
+                    border-radius: 6px;
+                    background: linear-gradient( 45deg, #BC1918, #d1473d, #e27b7b, #f2b6b6, #ffffff);
+                    background-size: 300%;
+                    animation:  animarBorda 3s linear infinite;
+                }
+                @keyframes animarBorda{
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                      50% {
+                        background-position: 100% 50%;
+                    }
+                      100% {
+                        background-position: 200% 50%;
+                    }
+                }
+
+                :nth-child(2){
+                    margin-right: 5px;
+                }
+
+                
+
+                button{
+                    all: unset;
+                    height: 100%;
+                    text-align: center;
+                    width: 100%;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+            
+            div.denuncia-button-container-information{
+                
+                flex: 50%;
+                text-align: end;
+                margin-right: 10vw;
+                button.denuncia-button-information{
+                    font-family: dosis;
+                    padding: 15px 25px 15px 25px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #FFFF;
+                    border-radius: 8px;
+                    background-color: #BC1918 ;
+                    border: none;
+                    
+                    &:active{
+                        border: 0.1px solid #BC1918;
+                        background-color: rgb(122, 2, 2);
+                    }
+                }
+
+            }
+            
+        }
+        
+        div.divselectfilter{
+            display: flex;
+            margin-top: 1vh;
+            margin-left: 10vw;
+            margin-right: 10vw;
+
+            div.selects{
+                width: 20%;
+                .selectfilterinfor{
+                    span{
+                        color: white;
+                    }
+                    svg{
+                        color: white;
+                    }
+                }
+            }
+
+            
+        }   
+    }
+}
+
+
+
+@media only screen and (max-width: 1150px){
+
+    div.corpototainformation{
+        
+        header.headerlogo{
+
+            div.logoinformation-denuncia-button{
+                flex-direction: column;
+
+                div.divlogo{
+                    margin: 0px;
+
+                    img.imagemlogo{
+                        width: 40px;
+                    }
+
+                    h1.tituloinformations{
+                        font-size: 27px;
+                        
+                        span.tituloinformationsfortaleza{
+                            margin-left: 3px;
+                        }
+                    }
+                    
+                    
+                }
+
+                div.notification{
+                    display: none;
+                }
+                
+                div.denuncia-button-container-information{
+                    margin: 0px;
+                    position: relative;
+                    top: 80vh;
+                    
+                    button.denuncia-button-information{
+                        width: 70vw;
+                        font-size: 20px;
+                    }
+                }
+                
+            }
+
+            div.divselectfilter{
+                align-items: center;
+
+                margin: 0px 5px 0px 5px;
+                position: relative;
+                bottom: 4vh;
+                div.selects{
+                    width: 100%;
+                    .selectfilterinfor{
+                        span{
+                            color: white;
+                        }
+                        svg{
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}

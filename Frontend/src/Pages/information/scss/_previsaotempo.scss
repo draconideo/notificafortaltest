@@ -1,0 +1,144 @@
+/* previsão do tempo */
+div.corpototainformation{
+
+    div.previsao-tempo-container{
+        margin-top: 3vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        
+        ul.listadetempo{
+            display: flex;
+            justify-content: center;
+            
+            ul.condicao-tempo{
+                display: flex;
+                margin-left: 2vw ;
+                margin-right: 2vw;
+                
+                div.tempo-info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    
+                    div.divimagemtempo{
+                        width: 4.5vw;
+                        height: 4.5vw;
+                        border: 3px solid $verdeEscuro;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        img{
+                            width: 45px;
+                        }
+                    }
+                    
+                    div.descricaotempo{
+                        h4{
+                            font-family: ubuntu;
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin: 0px;
+                            margin-top: 8px;
+
+                        }
+                        
+                        div.divminmax{
+                            p{
+                                margin: 0px;
+                                margin-top: 7px;
+                                font-family: ubuntu;
+                                font-weight: 500;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul.rain{
+                div.tempo-info{
+                    div.divimagemtempo{
+                        border:3px solid red;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Responsivo da previsão do tempo */
+@media only screen and (max-width: 1150px){
+    
+    div.corpototainformation{
+        
+        div.previsao-tempo-container{
+            
+            
+            ul.listadetempo{
+                
+                
+                ul.condicao-tempo{
+                    
+                    div.tempo-info{
+
+                        div.divimagemtempo{
+                            width: 10vw;
+                            height: 10vw;
+                            img{
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+
+
+
+@media only screen and (max-width: 700px){
+    
+    div.corpototainformation{
+        
+        div.previsao-tempo-container{
+            
+            
+            ul.listadetempo{
+                
+                
+                ul.condicao-tempo{
+                    
+                    div.tempo-info{
+
+                        div.divimagemtempo{
+                            width: 13vw;
+                            height: 13vw;
+                            img{
+                                width: 30px;
+                            }
+                        }
+
+                        div.descricaotempo{
+
+                            div.divminmax{
+                                p{
+                                    white-space: nowrap;
+                                    margin: 0px;
+                                    margin-top: 7px;
+                                    font-family: ubuntu;
+                                    font-weight: 500;
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}

@@ -1,0 +1,500 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+}
+
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button {
+  display: flex;
+  align-items: center;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo {
+  flex: 50%;
+  margin-left: 5vw;
+  display: flex;
+  align-items: center;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo img.imagemlogo {
+  width: 50px;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo h1.tituloinformations {
+  margin-left: 5px;
+  font-family: Dosis;
+  font-size: 36px;
+  font-weight: bold;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo h1.tituloinformations span.tituloinformationsnotifica {
+  color: #184080;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo h1.tituloinformations span.tituloinformationsfortaleza {
+  color: #0596D6;
+  margin-left: 8px;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.notification {
+  font-size: dosis;
+  font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #1B4051;
+  color: white;
+  border-radius: 6px;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.notification::before, div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.notification::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  border-radius: 6px;
+  background: linear-gradient(45deg, #BC1918, #d1473d, #e27b7b, #f2b6b6, #ffffff);
+  background-size: 300%;
+  animation: animarBorda 3s linear infinite;
+}
+@keyframes animarBorda {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.notification :nth-child(2) {
+  margin-right: 5px;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.notification button {
+  all: unset;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.denuncia-button-container-information {
+  flex: 50%;
+  text-align: end;
+  margin-right: 10vw;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.denuncia-button-container-information button.denuncia-button-information {
+  font-family: dosis;
+  padding: 15px 25px 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  background-color: #BC1918;
+  border: none;
+}
+div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.denuncia-button-container-information button.denuncia-button-information:active {
+  border: 0.1px solid #BC1918;
+  background-color: rgb(122, 2, 2);
+}
+div.corpototainformation header.headerlogo div.divselectfilter {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+div.corpototainformation header.headerlogo div.divselectfilter div.selects {
+  width: 20%;
+}
+div.corpototainformation header.headerlogo div.divselectfilter div.selects .selectfilterinfor span {
+  color: white;
+}
+div.corpototainformation header.headerlogo div.divselectfilter div.selects .selectfilterinfor svg {
+  color: white;
+}
+
+@media only screen and (max-width: 1150px) {
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button {
+    flex-direction: column;
+  }
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo {
+    margin: 0px;
+  }
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo img.imagemlogo {
+    width: 40px;
+  }
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo h1.tituloinformations {
+    font-size: 27px;
+  }
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.divlogo h1.tituloinformations span.tituloinformationsfortaleza {
+    margin-left: 3px;
+  }
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.notification {
+    display: none;
+  }
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.denuncia-button-container-information {
+    margin: 0px;
+    position: relative;
+    top: 80vh;
+  }
+  div.corpototainformation header.headerlogo div.logoinformation-denuncia-button div.denuncia-button-container-information button.denuncia-button-information {
+    width: 70vw;
+    font-size: 20px;
+  }
+  div.corpototainformation header.headerlogo div.divselectfilter {
+    align-items: center;
+    margin: 0px 5px 0px 5px;
+    position: relative;
+    bottom: 4vh;
+  }
+  div.corpototainformation header.headerlogo div.divselectfilter div.selects {
+    width: 100%;
+  }
+  div.corpototainformation header.headerlogo div.divselectfilter div.selects .selectfilterinfor span {
+    color: white;
+  }
+  div.corpototainformation header.headerlogo div.divselectfilter div.selects .selectfilterinfor svg {
+    color: white;
+  }
+}
+div.corpototainformation div.card-container {
+  margin-top: 2vh;
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+div.corpototainformation div.card-container div.card {
+  font-family: ubuntu;
+  color: white;
+  margin-right: 20px;
+  flex: 20%;
+  background-color: #1B4051;
+  border-radius: 20px;
+  font-weight: bold;
+}
+div.corpototainformation div.card-container div.card img {
+  position: relative;
+  top: 1.5vh;
+  margin-left: 1vw;
+  width: 25px;
+}
+div.corpototainformation div.card-container div.card p {
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+div.corpototainformation div.card-container div.card h2 {
+  margin-top: 2px;
+  text-align: center;
+}
+div.corpototainformation div.card-container div:nth-child(6) {
+  margin-right: 0px;
+}
+div.corpototainformation div.card-container div:nth-child(even) {
+  background-color: #BC1918;
+}
+div.corpototainformation div.card-container div:nth-last-child(-n+3) {
+  padding-top: 25px;
+}
+
+@media only screen and (max-width: 1150px) {
+  div.corpototainformation div.card-container {
+    flex-wrap: wrap;
+    margin: 0px 5px 0px 5px;
+  }
+  div.corpototainformation div.card-container div.card {
+    flex: 40%;
+    margin: 4px;
+  }
+}
+/* previsão do tempo */
+div.corpototainformation div.previsao-tempo-container {
+  margin-top: 3vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo {
+  display: flex;
+  justify-content: center;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo {
+  display: flex;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.divimagemtempo {
+  width: 4.5vw;
+  height: 4.5vw;
+  border: 3px solid #1B4051;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.divimagemtempo img {
+  width: 45px;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.descricaotempo h4 {
+  font-family: ubuntu;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 8px;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.descricaotempo div.divminmax p {
+  margin: 0px;
+  margin-top: 7px;
+  font-family: ubuntu;
+  font-weight: 500;
+  font-size: 15px;
+}
+div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.rain div.tempo-info div.divimagemtempo {
+  border: 3px solid red;
+}
+
+/* Responsivo da previsão do tempo */
+@media only screen and (max-width: 1150px) {
+  div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.divimagemtempo {
+    width: 10vw;
+    height: 10vw;
+  }
+  div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.divimagemtempo img {
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.divimagemtempo {
+    width: 13vw;
+    height: 13vw;
+  }
+  div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.divimagemtempo img {
+    width: 30px;
+  }
+  div.corpototainformation div.previsao-tempo-container ul.listadetempo ul.condicao-tempo div.tempo-info div.descricaotempo div.divminmax p {
+    white-space: nowrap;
+    margin: 0px;
+    margin-top: 7px;
+    font-family: ubuntu;
+    font-weight: 500;
+    font-size: 11px;
+  }
+}
+div.corpototainformation div.corpodosgraficos {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 4vh;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa {
+  min-width: 40%;
+  flex: 50%;
+  display: flex;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa div.legend-container {
+  flex: 10%;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa div.legend-container div.legend {
+  height: 100%;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa div.legend-container div.legend div.legend-values {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1B4051;
+  font-family: ubuntu;
+  font-weight: 500;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa div.legend-container div.legend div.legend-values div.legend-gradient {
+  height: 35vh;
+  width: 20px;
+  border: 1px solid #1B4051;
+  border-radius: 7px;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa div.map-container {
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 43vh;
+  width: 100%;
+  border: 2px solid #1B4051;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa div.map-container .bairro-card-container {
+  background-color: #1B4051;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 5px;
+}
+div.corpototainformation div.corpodosgraficos div.corpomapa div.map-container .map {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+div.corpototainformation div.corpodosgraficos div.bar-chart-container {
+  flex: 50%;
+  margin-left: 0.2vw;
+  border-radius: 10px;
+  border: 2px solid #1B4051;
+}
+div.corpototainformation div.corpodosgraficos #barChart {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1150px) {
+  div.corpototainformation div.corpodosgraficos {
+    display: none;
+  }
+}
+div.corpototainformation div.modal-information {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: 1000;
+}
+div.corpototainformation div.modal-information div.modal-content-information {
+  width: 40%;
+  height: 80%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+div.corpototainformation div.modal-information div.modal-content-information div.header-modal-information {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.corpototainformation div.modal-information div.modal-content-information div.header-modal-information span.close-information {
+  width: 25px;
+  position: relative;
+  left: 90%;
+  bottom: 25px;
+  color: #aaa;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1vh;
+}
+div.corpototainformation div.modal-information div.modal-content-information div.header-modal-information span.close-information:focus, div.corpototainformation div.modal-information div.modal-content-information div.header-modal-information span.close-information:hover {
+  color: black;
+}
+div.corpototainformation div.modal-information div.modal-content-information div.header-modal-information h2 {
+  margin: 0px;
+  font-family: dosis;
+  font-size: 40px;
+  color: #1B4051;
+  font-weight: bold;
+  text-align: center;
+  flex: 100%;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information label {
+  margin-left: 10px;
+  margin-top: 2vh;
+  margin-bottom: 5px;
+  font-family: dosis;
+  font-weight: bold;
+  color: #1B4051;
+  font-size: 20px;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information .select-bairro-information {
+  border: 1px solid #1B4051;
+  border-radius: 5px;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information input {
+  height: 30px;
+  border: 1px solid #1B4051;
+  border-radius: 5px;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information textarea {
+  all: unset;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: 1px solid #1B4051;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information div.inputarquivosdenuncia-information {
+  margin-top: 20px;
+  text-align: center;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information div.inputarquivosdenuncia-information label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  text-align: center;
+  border: 1px solid #1B4051;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information div.inputarquivosdenuncia-information label:active {
+  background-color: rgb(194, 194, 194);
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information div.divbotaoenviardenuncia-information {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information div.divbotaoenviardenuncia-information button.butaoenviardenuncia-information {
+  font-size: 20px;
+  font-family: dosis;
+  font-weight: bold;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  background-color: #BC1918;
+  min-width: 40%;
+  height: 50px;
+  cursor: pointer;
+}
+div.corpototainformation div.modal-information div.modal-content-information form.denuncia-form-information div.divbotaoenviardenuncia-information button.butaoenviardenuncia-information:active {
+  border: 0.1px solid #BC1918;
+  background-color: rgb(122, 2, 2);
+}
+div.corpototainformation div.show-information {
+  display: flex;
+}
+
+.butaoenviardenuncia-information:hover {
+  background-color: #092e46;
+}
+
+@media only screen and (max-width: 1150px) {
+  div.corpototainformation div.modal-information div.modal-content-information {
+    width: 90%;
+  }
+}/*# sourceMappingURL=information.css.map */

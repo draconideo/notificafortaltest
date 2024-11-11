@@ -1,0 +1,68 @@
+
+div.corpototainformation{
+    
+    div.card-container{
+        margin-top: 2vh;
+        display: flex;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+        div.card{
+            font-family: ubuntu;
+            color: #ffff;
+            margin-right: 20px;
+            flex: 20%;
+            background-color: $verdeEscuro;
+            border-radius: 20px;
+            font-weight: bold;
+
+            img{
+                position: relative;
+                top: 1.5vh;
+                margin-left: 1vw;
+                width: 25px;
+            }
+
+            p{
+                margin: 0px;
+                font-size: 30px;
+                text-align: center;
+            
+            }
+
+            h2{
+                margin-top: 2px;
+                text-align: center;
+            
+            }
+        }
+
+        div:nth-child(6){
+            margin-right: 0px;
+        }
+
+        div:nth-child(even){
+            background-color: $vermelho;
+        }
+
+        div:nth-last-child(-n+3){
+            padding-top: 25px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1150px){
+        
+    div.corpototainformation{
+        
+        div.card-container{
+            flex-wrap:wrap ;
+            margin: 0px 5px 0px 5px;
+            div.card{
+                flex: 40%;
+                margin: 4px;
+            }
+        }
+    }
+}
